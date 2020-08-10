@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Declercq</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="sass\style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+
+  <style>
+    #about {
+      background: #2D3142;
+    }
+
+    /* efecto para q se corte en diagonal la pantalla */
+    #about .pic {
+      height: 600px;
+      background: url('img/imgMobile.jpg') no-repeat center center/cover fixed;
+      border-bottom: 800px solid transparent;
+      border-left: 100px solid #2D3142;
+    }
+
+    /* para el texto de fondo azul*/
+    #about .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="d-block d-sm-none">
+
+  </nav>
+
+
+  <!-- NAV DESKTOP -->
+  <nav class="d-sm-block d-none">
+    <div id="about" class="">
+      <div class="text-center py-3">
+        <a href="navbar.html">NO NATBAR?</a>
+      </div>
+      <div class="row px-0 mx-0">
+        <div class="col-sm-4 text-center box">
+          <!-- MIN-HEIGHT AVOID JUMPING (saltos con las palabras)!!!! -->
+          <div class="titel" style="min-height: 100px" ;>
+            <h2 id="text2">
+              hey
+            </h2>
+            <!-- <div class="titleUnderline"></div> -->
+          </div>
+        </div>
+        <div class="col-sm-8 pic"></div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- FLAGS -->
+  <section class="py-sm-5 py-3 pt-4 mt-sm-5 flags">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12">
+          <h2>About Me</h2>
+          <div class="titleUnderline"></div>
+          <div class="row">
+            <div class="col-4 col-sm-4 text-center tab-selectors tab-border">
+              <h5 class="d-sm-block d-none tabLinks tab-border" onclick="cambioTabs(event, 'tab-1-content')">
+                <!-- Cancel at any time -->
+              </h5>
+              <!-- Mobile -->
+              <img src="img/english.png" alt="" class="img-fluid" onclick="cambioTabs(event, 'tab-1-content')"
+                style="width: 55px" />
+              <!-- <i class="fas fa-door-open fa-3x d-block d-sm-none" onclick="cambioTabs(event, 'tab-1-content')"></i> -->
+            </div>
+            <div class="col-4 col-sm-4 text-center tab-selectors">
+              <h5 class="d-sm-block d-none tabLinks" onclick="cambioTabs(event, 'tab-2-content')">
+                <!-- Watch anywhere -->
+              </h5>
+              <!-- mobile -->
+              <img src="img/alemania.png" alt="" class="img-fluid" onclick="cambioTabs(event, 'tab-2-content')"
+                style="width: 60px">
+              <!-- <i class="fas fa-tablet-alt fa-3x d-block d-sm-none" onclick="cambioTabs(event, 'tab-2-content')"></i> -->
+            </div>
+            <div class="col-4 col-sm-4 text-center tab-selectors">
+              <h5 class="d-sm-block d-none tabLinks" onclick="cambioTabs(event, 'tab-3-content')">
+                <!-- Pick your price -->
+              </h5>
+              <!-- Mobile -->
+              <img src="img/espana.png" alt="" class="img-fluid" onclick="cambioTabs(event, 'tab-3-content')"
+                style="width: 55px">
+              <!-- <i class="fas fa-tags fa-3x d-block d-sm-none" onclick="cambioTabs(event, 'tab-3-content')"></i> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- LANGUAGES TEXTS -->
+  <section class="pb-sm-4 d-sm-block d-block languages pb-4 ">
+    <div class="container">
+      <div class="row">
+        <!-- class show, will be use to show each selected content -->
+        <div class="col-12 col-sm-8 offset-sm-2 tab-contenido-item show pb-sm-4 px-sm-5 card pb-4" id="tab-1-content">
+
+          <p class="text-center d-sm-block d-none mt-5 card-body" style="background: aliceblue;">
+            My name is Alex Declercq and I'm a self-taught Frontend developer currently working for an IT company in
+            the city of Rosario, called Syloper. <br>
+            I enjoy working in teams, I'm an easy going person and love to achieve goals.<br>
+            I always liked to learn new things and overcome challenges. Despite being indepent and solve things on
+            my own, I also like working with cool people and good atmosphere. <br>After all, collaboration is a key
+            part
+            of a successful team<br>
+            Oh yeah
+
+          </p>
+          <!-- p mobile -->
+          <p class="text-center d-sm-none d-block mt-5 card-body" style="background: aliceblue;">
+            My name is Alex Declercq and I'm a self-taught Frontend developer currently working for an IT company in
+            the city of Rosario, called Syloper. <br>
+            I enjoy working in teams, I'm an easy going person and love to achieve goals.<br>
+            I always liked to learn new things and overcome challenges. Despite being indepent and solve things on
+            my own, I also like working with cool people and good atmosphere. <br>After all, collaboration is a key
+            part
+            of a successful team.
+          </p>
+        </div>
+
+        <!------= SECOND TAB! ----->
+        <div class="col-sm-8 offset-sm-2 col-12 pb-sm-4 tab-contenido-item card pb-4 px-sm-5" id="tab-2-content">
+          <p class="text-center mt-5 d-none d-sm-block card-body" style="background: aliceblue;">
+            Mein Name ist Alex Declercq und ich bin ein autodidaktischer Frontend-Entwickler, der derzeit für ein
+            IT-Unternehmen in arbeitet
+            die Stadt Rosario, genannt Syloper. <br>
+            Ich arbeite gerne in Teams, bin ein lockerer Mensch und liebe es, Ziele zu erreichen. <br>
+            Ich habe immer gerne neue Dinge gelernt und Herausforderungen gemeistert. Trotz der Unabhängigkeit und
+            der Lösung von Problemen
+            Ich selbst arbeite gerne mit coolen Leuten und einer guten Atmosphäre. <br> Zusammenarbeit ist
+            schließlich ein Schlüssel
+            Teil
+            eines erfolgreichen Teams
+          </p>
+
+          <!-- p MOBILE-->
+          <p class="text-center mt-5 d-block d-sm-none card-body" style="background: aliceblue;">
+            Mein Name ist Alex Declercq und ich bin ein autodidaktischer Frontend-Entwickler, der derzeit für ein
+            IT-Unternehmen in arbeitet
+            die Stadt Rosario, genannt Syloper. <br>
+            Ich arbeite gerne in Teams, bin ein lockerer Mensch und liebe es, Ziele zu erreichen. <br>
+            Ich habe immer gerne neue Dinge gelernt und Herausforderungen gemeistert. Trotz der Unabhängigkeit und
+            der Lösung von Problemen
+            Ich selbst arbeite gerne mit coolen Leuten und einer guten Atmosphäre. <br> Zusammenarbeit ist
+            schließlich ein Schlüssel
+            Teil
+            eines erfolgreichen Teams
+          </p>
+        </div>
+
+
+        <!------ THIRD TAB TABLE------>
+        <div class="col-sm-8 offset-sm-2 col-12 pb-sm-3 tab-contenido-item card pb-4 px-sm-5" id="tab-3-content">
+          <p class="text-center mt-5 mb-3 d-none d-sm-block card-body" style="background: aliceblue;">
+            Mi nombre es Alex Declercq y soy un desarrollador de Frontend autodidacta que actualmente trabajo para una
+            empresa de TI en
+            la ciudad de Rosario, llamada Syloper. <br>
+            Disfruto trabajar en equipo, soy una persona tranquila y me encanta lograr metas. <br>
+            Siempre me gustó aprender cosas nuevas y superar desafíos. A pesar de ser independiente y resolver problemas
+            por
+            mi cuenta, también me gusta trabajar con gente predispuesta y con buen ambiente. <br> Después de todo, la
+            colaboración es clave
+            parte
+            de un equipo exitoso
+          </p>
+          <!--h4 mobile -->
+          <p class="text-center mt-5 mb-3 d-block d-sm-none card-body" style="background: aliceblue;">
+            Mi nombre es Alex Declercq y soy un desarrollador de Frontend autodidacta que actualmente trabajo para una
+            empresa de TI en
+            la ciudad de Rosario, llamada Syloper. <br>
+            Disfruto trabajar en equipo, soy una persona tranquila y me encanta lograr metas. <br>
+            Siempre me gustó aprender cosas nuevas y superar desafíos. A pesar de ser independiente y resolver problemas
+            por
+            mi cuenta, también me gusta trabajar con gente predispuesta y con buen ambiente. <br> Después de todo, la
+            colaboración es clave
+            parte
+            de un equipo exitoso
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------- MY SKILLS -------->
+  <section class="skills mt-2 pt-4 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12">
+          <h2>My Skills</h2>
+          <div class="titleUnderline mb-4 mb-sm-5"></div>
+
+          <div class="row text-center">
+            <div class="col-4 col-sm-4">
+              <img src="img/jss.png" alt="" class="img-fluid js mb-5">
+            </div>
+            <div class="col-4 col-sm-4">
+              <img src="img/html.png" alt="" class="img-fluid html mb-5">
+            </div>
+            <div class="col-4 col-sm-4">
+              <img src="img/csspng.png" alt="" class="img-fluid css mb-4">
+            </div>
+            <div class="col-4 col-sm-4">
+              <img src="img/bootstrap.png" alt="" class="img-fluid boot mb-4">
+            </div>
+            <div class="col-4 col-sm-4">
+              <img src="img/sass.png" alt="" class="img-fluid sass mb-4 pt-2">
+            </div>
+            <div class=" col-4 col-sm-4">
+              <img src="img/git.png" alt="" class="img-fluid git mb-4">
+            </div>
+            <div class="col-4 col-sm-4">
+              <img src="img/vue.jpg" alt="" class="img-fluid vue mb-4">
+            </div>
+            <div class="col-4 col-sm-4">
+              <img src="img/ubuntu.png" alt="" class="img-fluid ubu mb-4 pt-3">
+            </div>
+            <div class="col-4 col-sm-4">
+              <img src="img/docker.png" alt="" class="img-fluid dock mb-4 pt-3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials pt-3 mb-5 py-sm-3" style="background: #2D3142">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 text-center">
+          <h2 class="text-white">Testimonials</h2>
+          <div class="titleUnderline mb-4 mb-sm-5"></div>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="false" style="width: 100%;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/cara3.jpg" class="img-fluid rounded-circle" alt="..." />
+                <p>He wanted to pay me to say<br> he is a good Frontend!</p>
+              </div>
+              <div class="carousel-item">
+                <img src="img/cara2.jpg" class="img-fluid rounded-circle" alt="..." />
+                <p>He stole projects from me. <br> And two apples</p>
+              </div>
+              <div class="carousel-item">
+                <img src="img/cara1.jpg" class="img-fluid rounded-circle" alt="..." />
+                <p class="d-none d-sm-block">His face looks like this one when he is happy? <br> I don't know him, then
+                </p>
+                <p class="d-block d-sm-none">His face looks like this one when he is happy? I don't know him, then</p>
+              </div>
+              <div class="carousel-item">
+                <img src="img/cara4.jpg" class="img-fluid rounded-circle" alt="..." />
+                <p>Am I his father? <br>Oh, no.</p>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- DROPDOWN GOALS -->
+  <section class="goals mb-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 offset-lg-2">
+          <div class="text-center">
+            <h2>Problems solved</h2>
+            <div class="titleUnderline mb-4"></div>
+          </div>
+
+          <div id="accordion">
+            <div class="card mb-3">
+              <div class="" id="headingOne">
+                <div class="mb-0">
+                  <button class="btn icono" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <i class="fas fa-plus fa-1x icono"></i>
+                  </button>
+                  <span class="ml-4">Qué es la ART?</span>
+                </div>
+              </div>
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                  richardson ad squid.
+                  3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                  quinoa nesciunt
+                  laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                  single-origin
+                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                  labore wes
+                  anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                  lomo. Leggings
+                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                  probably haven't heard
+                  of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card card mb-3">
+              <div class="" id="headingTwo">
+                <div class="mb-0">
+                  <button class="btn icono" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <i class="fas fa-plus fa-1x icono"></i>
+                  </button>
+                  <span class="ml-4">Qué es la ART?</span>
+                </div>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                  richardson ad squid.
+                  3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                  quinoa nesciunt
+                  laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                  single-origin
+                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                  labore wes
+                  anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                  lomo. Leggings
+                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                  probably haven't heard
+                  of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card card mb-3">
+              <div class="" id="headingThree">
+                <div class="mb-0">
+                  <button class="btn icono" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <i class="fas fa-plus fa-1x icono"></i>
+                  </button>
+                  <span class="ml-4">Qué es la ART?</span>
+                </div>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                  richardson ad squid.
+                  3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                  quinoa nesciunt
+                  laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                  single-origin
+                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                  labore wes
+                  anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                  lomo. Leggings
+                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                  probably haven't heard
+                  of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card card mb-3">
+              <div class="" id="headingFour">
+                <div class="mb-0">
+                  <button class="btn icono" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <i class="fas fa-plus fa-1x icono"></i>
+                  </button>
+                  <span class="ml-4">Qué es la ART?</span>
+                </div>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                  richardson ad squid.
+                  3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                  quinoa nesciunt
+                  laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                  single-origin
+                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                  labore wes
+                  anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                  lomo. Leggings
+                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                  probably haven't heard
+                  of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="mt-5" style="width: 290px; border: 1px solid lightgray">
+
+  <!-- FOOTER -->
+  <footer class="py-4 d-sm-none d-block">
+    <div class=" container">
+      <div class="row">
+        <div class="col-12 col-sm-12">
+          <div class="col-12 col-sm-12">
+            <h2>Contact</h2>
+            <div class="titleUnderline mb-4"></div>
+            <div class="d-flex justify-content-center">
+              <div>
+                <a href="https://github.com/nasden2019">
+                  <img src="img/github.png" alt="" class="redes" />
+                </a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/alex-declercq-98068818a/">
+                  <img src="img/linkedin.jpg" alt="" class="redes" />
+                </a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/niummm/">
+                  <img src="img/Instagram-logo.jpg" alt="" class="redes" />
+                </a>
+              </div>
+              <div>
+                <a href="https://wa.me/54934166017535">
+                  <img src="img/images.png" alt="" class="redes" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <footer class="py-4 d-none d-sm-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12">
+          <h2 class="text-right">+ Info & Contact</h2>
+          <!-- <div class="titleUnderline mb-4"></div> -->
+          <div class="d-flex justify-content-end">
+            <div>
+              <a href="https://github.com/nasden2019">
+                <img src="img/github.png" alt="" class="redes" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/alex-declercq-98068818a/">
+                <img src="img/linkedin.jpg" alt="" class="redes" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/niummm/">
+                <img src="img/Instagram-logo.jpg" alt="" class="redes" />
+              </a>
+            </div>
+            <div>
+              <a href="https://wa.me/54934166017535">
+                <img src="img/images.png" alt="" class="redes" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+
+  <script src="app.js"></script>
+  <script src="navbar.js"></script>
+</body>
+
+</html>

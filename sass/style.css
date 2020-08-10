@@ -1,0 +1,248 @@
+nav {
+  background: url("/img/imgMobile.jpg") no-repeat center center/cover;
+  height: 83vh;
+}
+
+nav a {
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: white;
+}
+
+nav a:hover {
+  -webkit-text-decoration: solid 1px white;
+          text-decoration: solid 1px white;
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  nav {
+    background: url("/img/IMG_1365.jpg") no-repeat center center/cover;
+    height: 87vh;
+    background-attachment: fixed;
+  }
+  nav a {
+    color: black;
+    font-weight: 700;
+  }
+  nav a:hover {
+    -webkit-text-decoration: solid;
+            text-decoration: solid;
+    color: white;
+    cursor: pointer;
+  }
+  nav #text {
+    color: black;
+    font-weight: 700;
+    margin: 115px 0 0 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  footer {
+    background: #2d3142;
+    color: white;
+  }
+}
+
+footer .redes {
+  height: 55px;
+}
+
+footer .redes2 {
+  width: 95px;
+}
+
+section.languages .langWrap {
+  text-align: center;
+}
+
+section.languages .langTitle a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+section.languages .langTitle a:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+section.languages #tab-2-content,
+section.languages #tab-3-content {
+  display: none;
+}
+
+section.languages img {
+  cursor: pointer;
+}
+
+section.languages p {
+  color: black;
+  font-size: 1.1rem;
+}
+
+section.languages a.active {
+  border-bottom: 2px solid red;
+}
+
+@media (max-width: 700px) {
+  .description {
+    padding: 0 44px;
+  }
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 20px;
+}
+
+.titleUnderline {
+  width: 70px;
+  border: 1.5px solid red;
+  margin: -12px auto 20px auto;
+}
+
+.js {
+  width: 85px;
+}
+
+@media (min-width: 700px) {
+  .js {
+    width: 113px !important;
+    margin-top: 9px;
+  }
+}
+
+.css {
+  width: 70px;
+}
+
+@media (min-width: 700px) {
+  .css {
+    width: 95px !important;
+  }
+}
+
+.html {
+  width: 95px;
+}
+
+@media (min-width: 700px) {
+  .html {
+    width: 135px !important;
+  }
+}
+
+.sass {
+  width: 350px;
+}
+
+@media (min-width: 700px) {
+  .sass {
+    width: 225px !important;
+  }
+}
+
+.boot {
+  width: 80px;
+}
+
+@media (min-width: 700px) {
+  .boot {
+    width: 113px !important;
+  }
+}
+
+.git {
+  width: 85px;
+}
+
+@media (min-width: 700px) {
+  .git {
+    width: 120px !important;
+  }
+}
+
+.vue {
+  width: 100px;
+}
+
+@media (min-width: 700px) {
+  .vue {
+    width: 120px !important;
+    margin-top: 15px;
+  }
+}
+
+.ubu {
+  width: 60px;
+}
+
+@media (min-width: 700px) {
+  .ubu {
+    width: 80px !important;
+    margin-top: 15px;
+  }
+}
+
+.dock {
+  width: 80px;
+}
+
+@media (min-width: 700px) {
+  .dock {
+    width: 110px !important;
+    margin-top: 15px;
+  }
+}
+
+.testimonials .rounded-circle {
+  width: 250px;
+}
+
+@media (min-width: 700px) {
+  .testimonials .rounded-circle {
+    width: 350px;
+  }
+}
+
+.testimonials p {
+  padding: 30px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+@media (min-width: 700px) {
+  .testimonials p {
+    font-size: 1.4rem;
+  }
+}
+
+.goals .icono {
+  background: #2D3142;
+  color: white;
+  padding: 10px 15px;
+}
+
+.goals .icono:hover {
+  background: #D1CBCB;
+}
+
+#about h2 {
+  color: white;
+  font-size: 2.2rem;
+}
+
+.flags {
+  /* MIN AND MAX TOGETHER WORK FOR LAPTOP AND BIG MONITOR. CHECK IT ALWAYS! */
+}
+
+@media only screen and (min-width: 560px) and (max-width: 1600px) {
+  .flags {
+    margin-top: 210px !important;
+  }
+}

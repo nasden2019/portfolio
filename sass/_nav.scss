@@ -1,0 +1,59 @@
+// FIRST IMAGE
+
+nav {
+  background: url("/img/imgMobile.jpg") no-repeat center center/cover;
+  height: 83vh;
+  // para oscurecer foto: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+
+  a {
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: white;
+
+    &:hover {
+      text-decoration: solid 1px white;
+      color: black;
+      cursor: pointer;
+    }
+  }
+
+  // MOBILE
+  @media (max-width: 700px) {
+    background: url("/img/IMG_1365.jpg") no-repeat center center/cover;
+    height: 87vh;
+    background-attachment: fixed; // efecto de q se mueva todo menos la img
+
+    a {
+      color: black;
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: solid;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    #text {
+      color: black;
+      font-weight: 700;
+      margin: 115px 0 0 20px;
+    }
+  }
+}
+
+// FOOTER
+footer {
+  @media (min-width: 700px) {
+    background: #2d3142;
+    color: white;
+  }
+
+  .redes {
+    height: 55px;
+  }
+
+  .redes2 {
+    width: 95px;
+  }
+}

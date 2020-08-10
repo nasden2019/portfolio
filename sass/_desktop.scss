@@ -1,0 +1,14 @@
+#about {
+    h2 {
+        color: white;
+        font-size: 2.2rem;
+    }
+}
+
+.flags {
+
+    /* MIN AND MAX TOGETHER WORK FOR LAPTOP AND BIG MONITOR. CHECK IT ALWAYS! */
+    @media only screen and (min-width: 560px) and (max-width: 1600px) {
+        margin-top: 210px !important;
+    }
+}

@@ -1,0 +1,132 @@
+h2 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 20px;
+}
+
+// SUBRAYADO DE TITULOS
+.titleUnderline {
+    width: 70px;
+    border: 1.5px solid red;
+    margin: -12px auto 20px auto;
+}
+
+
+// IMGS LOGOS ------MY SKILLS-----
+.js {
+    width: 85px;
+
+    @media (min-width: 700px) {
+        width: 113px !important;
+        margin-top: 9px;
+    }
+}
+
+.css {
+    width: 70px;
+
+    @media (min-width: 700px) {
+        width: 95px !important;
+    }
+}
+
+.html {
+    width: 95px;
+
+    @media (min-width: 700px) {
+        width: 135px !important;
+    }
+}
+
+.sass {
+    width: 350px;
+
+    @media (min-width: 700px) {
+        width: 225px !important;
+    }
+}
+
+.boot {
+    width: 80px;
+
+    @media (min-width: 700px) {
+        width: 113px !important;
+    }
+}
+
+.git {
+    width: 85px;
+
+    @media (min-width: 700px) {
+        width: 120px !important;
+    }
+}
+
+.vue {
+    width: 100px;
+
+    @media (min-width: 700px) {
+        width: 120px !important;
+        margin-top: 15px;
+    }
+}
+
+.ubu {
+    width: 60px;
+
+    @media (min-width: 700px) {
+        width: 80px !important;
+        margin-top: 15px;
+    }
+}
+
+.dock {
+    width: 80px;
+
+    @media (min-width: 700px) {
+        width: 110px !important;
+        margin-top: 15px;
+    }
+}
+
+
+
+// ------TESTIMONIALS--------
+.testimonials {
+
+    .rounded-circle {
+        width: 250px;
+
+        @media (min-width: 700px) {
+            width: 350px;
+        }
+    }
+
+
+    p {
+        padding: 30px;
+        font-size: 1.1rem;
+        color: white;
+
+        @media (min-width: 700px) {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+// PROBLEMS SOLVED
+.goals {
+
+    .icono {
+        background: #2D3142;
+        color: white;
+        padding: 10px 15px;
+
+        // border-top-left-radius: 10px;
+        // border-bottom-left-radius: 10px;
+        &:hover {
+            background: #D1CBCB;
+        }
+    }
+}

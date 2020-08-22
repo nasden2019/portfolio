@@ -11,7 +11,6 @@ let letter = '';
     currentText = texts[count];
     letter = currentText.slice(0, index++);
 
-    // document.querySelector('#text').textContent = letter; // para mobile
     document.querySelector('#text2').textContent = letter;
 
     if (letter.length === currentText.length) {
@@ -19,6 +18,29 @@ let letter = '';
         index = 0;
     }
     setTimeout(type, 200);
+})();
+
+// MOBILE TYPE EFFECT
+let texts2 = ['Natbar Coming Soon'];
+let count2 = 0;
+let index2 = 0;
+let currentText2 = '';
+let letter2 = '';
+
+(function type() {
+    if (count2 === texts2.length) {
+        count2 = 0;
+    }
+    currentText2 = texts2[count2];
+    letter2 = currentText2.slice(0, index++);
+
+    document.querySelector('#text').textContent = letter2;
+
+    if (letter2.length === currentText2.length) {
+        count2++;
+        index = 0;
+    }
+    setTimeout(type, 500);
 })();
 
 
@@ -44,3 +66,25 @@ function cambioTabs(event, imgs) {
     document.getElementById(imgs).style.display = "block";
     // evt.currentTarget.className += "tab-border";
 }
+
+// NAVBAR OPTION BY SCROLLING 
+// testimonials
+window.scroll({
+    top: 1890,
+    left: 100,
+    behavior: 'smooth'
+});
+
+// scroll contact
+const scrollContact = document.querySelector('.scrollContact');
+scrollContact.addEventListener('click', (e) => {
+    e.preventDefault();
+    scrollTo(0, 2800);
+})
+
+const scrollAbout = document.querySelector('.scrollAbout');
+
+scrollAbout.addEventListener('click', (e) => {
+    e.preventDefault();
+    scrollTo(0, 900);
+})

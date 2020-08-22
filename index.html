@@ -40,15 +40,28 @@
 
 <body>
   <nav class="d-block d-sm-none">
-
+    <div class="text-center py-3">
+      <div class="" style="min-height: 100px" ;>
+        <h2 id="text">
+          Natbar coming soon
+        </h2>
+        <!-- <div class="titleUnderline"></div> -->
+      </div>
+      <!-- <a href="navbar.html">NO NATBAR?</a> -->
+    </div>
   </nav>
 
 
+
+
   <!-- NAV DESKTOP -->
-  <nav class="d-sm-block d-none">
+  <nav id="nav" class="d-sm-block d-none">
     <div id="about" class="">
       <div class="text-center py-3">
-        <a href="navbar.html">NO NATBAR?</a>
+        <!-- <a href="#aboutme" class="mr-sm-5">About Me</a> -->
+        <a href="" class="mr-sm-5 scrollAbout">About Me</a>
+        <a href="" class="mr-sm-5">Testimonials</a>
+        <a href="" class="scrollContact">Contact & Projects</a>
       </div>
       <div class="row px-0 mx-0">
         <div class="col-sm-4 text-center box">
@@ -79,8 +92,8 @@
                 <!-- Cancel at any time -->
               </h5>
               <!-- Mobile -->
-              <img src="img/english.png" alt="" class="img-fluid" onclick="cambioTabs(event, 'tab-1-content')"
-                style="width: 55px" />
+              <img src="img/english.png" alt="" class="img-fluid banderita" onclick="cambioTabs(event, 'tab-1-content')"
+                style="width: 60px; cursor: pointer;" />
               <!-- <i class="fas fa-door-open fa-3x d-block d-sm-none" onclick="cambioTabs(event, 'tab-1-content')"></i> -->
             </div>
             <div class="col-4 col-sm-4 text-center tab-selectors">
@@ -88,8 +101,8 @@
                 <!-- Watch anywhere -->
               </h5>
               <!-- mobile -->
-              <img src="img/alemania.png" alt="" class="img-fluid" onclick="cambioTabs(event, 'tab-2-content')"
-                style="width: 60px">
+              <img src="img/alemania.png" alt="" class="img-fluid banderita"
+                onclick="cambioTabs(event, 'tab-2-content')" style="width: 60px; cursor: pointer;">
               <!-- <i class="fas fa-tablet-alt fa-3x d-block d-sm-none" onclick="cambioTabs(event, 'tab-2-content')"></i> -->
             </div>
             <div class="col-4 col-sm-4 text-center tab-selectors">
@@ -97,8 +110,8 @@
                 <!-- Pick your price -->
               </h5>
               <!-- Mobile -->
-              <img src="img/espana.png" alt="" class="img-fluid" onclick="cambioTabs(event, 'tab-3-content')"
-                style="width: 55px">
+              <img src="img/espana.png" alt="" class="img-fluid banderita" onclick="cambioTabs(event, 'tab-3-content')"
+                style="width: 60px; cursor: pointer;">
               <!-- <i class="fas fa-tags fa-3x d-block d-sm-none" onclick="cambioTabs(event, 'tab-3-content')"></i> -->
             </div>
           </div>
@@ -109,13 +122,14 @@
 
 
   <!-- LANGUAGES TEXTS -->
-  <section class="pb-sm-4 d-sm-block d-block languages pb-4 ">
+  <section class="pb-sm-4 d-sm-block d-block languages pb-4">
     <div class="container">
       <div class="row">
         <!-- class show, will be use to show each selected content -->
-        <div class="col-12 col-sm-8 offset-sm-2 tab-contenido-item show pb-sm-4 px-sm-5 card pb-4" id="tab-1-content">
+        <div class="col-12 col-sm-8 offset-sm-2 tab-contenido-item show pb-sm-4 px-sm-5 card pb-4 py-sm-5"
+          id="tab-1-content">
 
-          <p class="text-center d-sm-block d-none mt-5 card-body" style="background: aliceblue;">
+          <p class="text-center d-sm-block d-none mt-4 card-body py-sm-5" style="background: aliceblue;">
             My name is Alex Declercq and I'm a self-taught Frontend developer currently working for an IT company in
             the city of Rosario, called Syloper. <br>
             I enjoy working in teams, I'm an easy going person and love to achieve goals.<br>
@@ -123,11 +137,11 @@
             my own, I also like working with cool people and good atmosphere. <br>After all, collaboration is a key
             part
             of a successful team<br>
-            Oh yeah
+
 
           </p>
           <!-- p mobile -->
-          <p class="text-center d-sm-none d-block mt-5 card-body" style="background: aliceblue;">
+          <p class="text-center d-sm-none d-block mt-4 card-body" style="background: aliceblue;">
             My name is Alex Declercq and I'm a self-taught Frontend developer currently working for an IT company in
             the city of Rosario, called Syloper. <br>
             I enjoy working in teams, I'm an easy going person and love to achieve goals.<br>
@@ -140,7 +154,8 @@
 
         <!------= SECOND TAB! ----->
         <div class="col-sm-8 offset-sm-2 col-12 pb-sm-4 tab-contenido-item card pb-4 px-sm-5" id="tab-2-content">
-          <p class="text-center mt-5 d-none d-sm-block card-body" style="background: aliceblue;">
+
+          <p class="text-center mt-5 d-none d-sm-block card-body py-sm-5" style="background: aliceblue;">
             Mein Name ist Alex Declercq und ich bin ein autodidaktischer Frontend-Entwickler, der derzeit für ein
             IT-Unternehmen in arbeitet
             die Stadt Rosario, genannt Syloper. <br>
@@ -171,7 +186,8 @@
 
         <!------ THIRD TAB TABLE------>
         <div class="col-sm-8 offset-sm-2 col-12 pb-sm-3 tab-contenido-item card pb-4 px-sm-5" id="tab-3-content">
-          <p class="text-center mt-5 mb-3 d-none d-sm-block card-body" style="background: aliceblue;">
+
+          <p class="text-center mt-5 mb-4 d-none d-sm-block card-body py-sm-5" style="background: aliceblue;">
             Mi nombre es Alex Declercq y soy un desarrollador de Frontend autodidacta que actualmente trabajo para una
             empresa de TI en
             la ciudad de Rosario, llamada Syloper. <br>
@@ -202,10 +218,10 @@
   </section>
 
   <!--------- MY SKILLS -------->
-  <section class="skills mt-2 pt-4 pb-5">
+  <section class="skills mt-2 pt-4 pb-5 mt-sm-5">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-12">
+        <div class="col-12 col-sm-12" id="skills">
           <h2>My Skills</h2>
           <div class="titleUnderline mb-4 mb-sm-5"></div>
 
@@ -245,7 +261,7 @@
 
 
   <!-- TESTIMONIALS -->
-  <section class="testimonials pt-3 mb-5 py-sm-3" style="background: #2D3142">
+  <section class="testimonials pt-5 pb-4 mb-5 mt-4 py-sm-5" style="background: #2D3142" id="testimonials">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12 text-center">
@@ -305,25 +321,15 @@
                     aria-controls="collapseOne">
                     <i class="fas fa-plus fa-1x icono"></i>
                   </button>
-                  <span class="ml-4">Qué es la ART?</span>
+                  <span class="ml-4">UX/UI Design</span>
                 </div>
               </div>
 
               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                  richardson ad squid.
-                  3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                  quinoa nesciunt
-                  laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                  single-origin
-                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                  labore wes
-                  anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                  lomo. Leggings
-                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard
-                  of them accusamus labore sustainable VHS.
+                  Even if it's not my area, I managed to create a new design for a custumer who was not happy with the
+                  design given and our graphic designer was already on vacation and I decided to give it a try.
+                  Thankfully, she was happy about it
                 </div>
               </div>
             </div>
@@ -417,10 +423,10 @@
     </div>
   </section>
 
-  <hr class="mt-5" style="width: 290px; border: 1px solid lightgray">
+  <!-- <hr class="mt-5" style="width: 290px; border: 1px solid lightgray"> -->
 
   <!-- FOOTER -->
-  <footer class="py-4 d-sm-none d-block">
+  <footer class="py-4 d-sm-none d-block" id="#contact">
     <div class=" container">
       <div class="row">
         <div class="col-12 col-sm-12">
@@ -440,12 +446,12 @@
               </div>
               <div>
                 <a href="https://www.instagram.com/niummm/">
-                  <img src="img/Instagram-logo.jpg" alt="" class="redes" />
+                  <img src="img/instagramicon.png" alt="" class="redes" />
                 </a>
               </div>
               <div>
                 <a href="https://wa.me/54934166017535">
-                  <img src="img/images.png" alt="" class="redes" />
+                  <img src="img/whatsappicon.png" alt="" class="redes" />
                 </a>
               </div>
             </div>
@@ -454,16 +460,16 @@
       </div>
   </footer>
 
-  <footer class="py-4 d-none d-sm-block">
+  <footer class="py-4 d-none d-sm-block mt-sm-5" id="contacto">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12">
           <h2 class="text-right">+ Info & Contact</h2>
           <!-- <div class="titleUnderline mb-4"></div> -->
-          <div class="d-flex justify-content-end">
+          <div class="d-flex justify-content-end align-items-center">
             <div>
               <a href="https://github.com/nasden2019">
-                <img src="img/github.png" alt="" class="redes" />
+                <img src="img/githubicon.png" alt="" class="redes" style="height: 65px" />
               </a>
             </div>
             <div>
@@ -473,12 +479,12 @@
             </div>
             <div>
               <a href="https://www.instagram.com/niummm/">
-                <img src="img/Instagram-logo.jpg" alt="" class="redes" />
+                <img src="img/instagramicon.png" alt="" class="redes" />
               </a>
             </div>
             <div>
               <a href="https://wa.me/54934166017535">
-                <img src="img/images.png" alt="" class="redes" />
+                <img src="img/whatsappicon.png" alt="" class="redes" />
               </a>
             </div>
           </div>

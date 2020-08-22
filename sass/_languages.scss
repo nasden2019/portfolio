@@ -26,9 +26,6 @@ section.languages {
         display: none;
     }
 
-    img {
-        cursor: pointer;
-    }
 
     p {
         color: black;
@@ -44,4 +41,8 @@ section.languages {
     .description {
         padding: 0 44px;
     }
+}
+
+.banderita {
+    cursor: pointer !important;
 }

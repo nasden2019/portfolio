@@ -434,20 +434,38 @@ h2 {
   /* MIN AND MAX TOGETHER WORK FOR LAPTOP AND BIG MONITOR. CHECK IT ALWAYS! */
 }
 
-@media only screen and (min-width: 860px) and (max-width: 1600px) {
+@media only screen and (min-width: 160px) and (max-width: 560x) {
   .flags {
-    margin-top: 320px !important;
+    margin-top: 500px !important;
   }
 }
 
-@media only screen and (min-width: 512px) and (max-width: 1200px) {
+@media only screen and (min-width: 560px) and (max-width: 860x) {
+  .flags {
+    margin-top: 900px !important;
+  }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1100x) {
+  .flags {
+    margin-top: 500px !important;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1490px) {
   .flags {
     margin-top: 330px !important;
   }
 }
 
-@media only screen and (min-width: 460px) and (max-width: 860x) {
+@media only screen and (min-width: 1500px) and (max-width: 1900px) {
   .flags {
-    margin-top: 110px !important;
+    margin-top: 320px !important;
+  }
+}
+
+@media only screen and (min-width: 1900px) and (max-width: 2500px) {
+  .flags {
+    margin-top: 100px !important;
   }
 }

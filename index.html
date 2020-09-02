@@ -38,30 +38,60 @@
   </style>
 </head>
 
+
 <body>
-  <nav class="d-block d-sm-none">
-    <div class="text-center py-3">
+  <nav class="d-block d-sm-none navMob">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <div class="d-flex justify-content-end">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars mt-2"></i></span>
+    </button>
+  </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active" style="margin-bottom: -20px">
+          <a href="#about-me" class="nav-link" >About Me</a>
+        </li>
+        <li class="nav-item" style="margin-bottom: -20px">
+          <a href="#skills" class=" nav-link">My Skills</a>
+        </li>
+        <li class="nav-item" style="margin-bottom: -15px">
+          <a href="#testimonials" class=" nav-link">Reviews & Goals</a>
+        </li>
+        <li class="nav-item" >
+          <a href="#contacto" class="nav-link">Contact & Projects</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- TYPE EFFECT  
+      <div class="text-center py-3">
       <div class="" style="min-height: 100px" ;>
         <h2 id="text">
           Natbar coming soon
-        </h2>
-        <!-- <div class="titleUnderline"></div> -->
+        </h2> -->
+<!--      
       </div>
-      <!-- <a href="navbar.html">NO NATBAR?</a> -->
-    </div>
+   
+    </div>  -->
   </nav>
-
-
 
 
   <!-- NAV DESKTOP -->
   <nav id="nav" class="d-sm-block d-none">
     <div id="about" class="">
-      <div class="text-center py-3">
-        <!-- <a href="#aboutme" class="mr-sm-5">About Me</a> -->
-        <a href="" class="mr-sm-5 scrollAbout">About Me</a>
-        <a href="" class="mr-sm-5">Testimonials</a>
-        <a href="" class="scrollContact">Contact & Projects</a>
+      <div class="text-center py-3 d-flex">
+        <li class="nav-item active">
+        <a href="#about-me" class="mr-sm-3 nav-link">About Me</a>
+        </li>
+        <li class="nav-item">
+        <a href="#testimonials" class="mr-sm-3 nav-link">Reviews</a>
+        </li>
+        <li class="nav-item">
+        <a href="#contactoD" class="nav-link">Contact & Projects</a>
+        </li>
       </div>
       <div class="row px-0 mx-0">
         <div class="col-sm-4 text-center box">
@@ -84,35 +114,24 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12">
-          <h2>About Me</h2>
+          <h2 id="about-me">About Me</h2>
           <div class="titleUnderline"></div>
           <div class="row">
-            <div class="col-4 col-sm-4 text-center tab-selectors tab-border">
-              <h5 class="d-sm-block d-none tabLinks tab-border" onclick="cambioTabs(event, 'tab-1-content')">
-                <!-- Cancel at any time -->
+            <div class="col-4 col-sm-4 text-center tab-selectors ">
+              <h5 class="d-sm-block d-none ">
               </h5>
-              <!-- Mobile -->
-              <img src="img/english.png" alt="" class="img-fluid banderita" onclick="cambioTabs(event, 'tab-1-content')"
-                style="width: 60px; cursor: pointer;" />
-              <!-- <i class="fas fa-door-open fa-3x d-block d-sm-none" onclick="cambioTabs(event, 'tab-1-content')"></i> -->
+              <img src="img/english.png" alt="" class="img-fluid banderita" style="width: 60px; cursor: pointer;" />
+              <!-- <div class="red-border"></div> -->
             </div>
             <div class="col-4 col-sm-4 text-center tab-selectors">
-              <h5 class="d-sm-block d-none tabLinks" onclick="cambioTabs(event, 'tab-2-content')">
-                <!-- Watch anywhere -->
+              <h5 class="d-sm-block d-none tabLinks">
               </h5>
-              <!-- mobile -->
-              <img src="img/alemania.png" alt="" class="img-fluid banderita"
-                onclick="cambioTabs(event, 'tab-2-content')" style="width: 60px; cursor: pointer;">
-              <!-- <i class="fas fa-tablet-alt fa-3x d-block d-sm-none" onclick="cambioTabs(event, 'tab-2-content')"></i> -->
+              <img src="img/alemania.png" alt="" class="img-fluid banderita" style="width: 60px; cursor: pointer;">
             </div>
             <div class="col-4 col-sm-4 text-center tab-selectors">
-              <h5 class="d-sm-block d-none tabLinks" onclick="cambioTabs(event, 'tab-3-content')">
-                <!-- Pick your price -->
+              <h5 class="d-sm-block d-none tabLinks">
               </h5>
-              <!-- Mobile -->
-              <img src="img/espana.png" alt="" class="img-fluid banderita" onclick="cambioTabs(event, 'tab-3-content')"
-                style="width: 60px; cursor: pointer;">
-              <!-- <i class="fas fa-tags fa-3x d-block d-sm-none" onclick="cambioTabs(event, 'tab-3-content')"></i> -->
+              <img src="img/espana.png" alt="" class="img-fluid banderita" style="width: 60px; cursor: pointer;">
             </div>
           </div>
         </div>
@@ -126,8 +145,7 @@
     <div class="container">
       <div class="row">
         <!-- class show, will be use to show each selected content -->
-        <div class="col-12 col-sm-8 offset-sm-2 tab-contenido-item show pb-sm-4 px-sm-5 card pb-4 py-sm-5"
-          id="tab-1-content">
+        <div class="col-12 col-sm-8 offset-sm-2 tab-content pb-sm-4 px-sm-5 card pb-4 py-sm-5">
 
           <p class="text-center d-sm-block d-none mt-4 card-body py-sm-5" style="background: aliceblue;">
             My name is Alex Declercq and I'm a self-taught Frontend developer currently working for an IT company in
@@ -153,12 +171,12 @@
         </div>
 
         <!------= SECOND TAB! ----->
-        <div class="col-sm-8 offset-sm-2 col-12 pb-sm-4 tab-contenido-item card pb-4 px-sm-5" id="tab-2-content">
+        <div class="col-sm-8 offset-sm-2 col-12 pb-sm-4 tab-content card pb-4 px-sm-5" style="display: none">
 
           <p class="text-center mt-5 d-none d-sm-block card-body py-sm-5" style="background: aliceblue;">
             Mein Name ist Alex Declercq und ich bin ein autodidaktischer Frontend-Entwickler, der derzeit für ein
-            IT-Unternehmen in arbeitet
-            die Stadt Rosario, genannt Syloper. <br>
+            IT-Unternehmen, , genannt Syloper, in 
+            die Stadt von Rosario arbeitet. <br>
             Ich arbeite gerne in Teams, bin ein lockerer Mensch und liebe es, Ziele zu erreichen. <br>
             Ich habe immer gerne neue Dinge gelernt und Herausforderungen gemeistert. Trotz der Unabhängigkeit und
             der Lösung von Problemen
@@ -185,19 +203,18 @@
 
 
         <!------ THIRD TAB TABLE------>
-        <div class="col-sm-8 offset-sm-2 col-12 pb-sm-3 tab-contenido-item card pb-4 px-sm-5" id="tab-3-content">
+        <div class="col-sm-8 offset-sm-2 col-12 pb-sm-3 tab-content card pb-4 px-sm-5" style="display: none">
 
           <p class="text-center mt-5 mb-4 d-none d-sm-block card-body py-sm-5" style="background: aliceblue;">
-            Mi nombre es Alex Declercq y soy un desarrollador de Frontend autodidacta que actualmente trabajo para una
-            empresa de TI en
+            Mi nombre es Alex Declercq y soy desarrollador de Frontend autodidacta que actualmente trabajo para una
+            empresa de IT en
             la ciudad de Rosario, llamada Syloper. <br>
             Disfruto trabajar en equipo, soy una persona tranquila y me encanta lograr metas. <br>
             Siempre me gustó aprender cosas nuevas y superar desafíos. A pesar de ser independiente y resolver problemas
             por
             mi cuenta, también me gusta trabajar con gente predispuesta y con buen ambiente. <br> Después de todo, la
-            colaboración es clave
-            parte
-            de un equipo exitoso
+            colaboración es clave para que
+             un equipo sea exitoso
           </p>
           <!--h4 mobile -->
           <p class="text-center mt-5 mb-3 d-block d-sm-none card-body" style="background: aliceblue;">
@@ -208,9 +225,8 @@
             Siempre me gustó aprender cosas nuevas y superar desafíos. A pesar de ser independiente y resolver problemas
             por
             mi cuenta, también me gusta trabajar con gente predispuesta y con buen ambiente. <br> Después de todo, la
-            colaboración es clave
-            parte
-            de un equipo exitoso
+            colaboración es clave para que un 
+             equipo sea exitoso
           </p>
         </div>
       </div>
@@ -279,9 +295,9 @@
               </div>
               <div class="carousel-item">
                 <img src="img/cara1.jpg" class="img-fluid rounded-circle" alt="..." />
-                <p class="d-none d-sm-block">His face looks like this one when he is happy? <br> I don't know him, then
+                <p class="d-none d-sm-block">Does he looks like this one when he is happy? <br> I don't know him, then
                 </p>
-                <p class="d-block d-sm-none">His face looks like this one when he is happy? I don't know him, then</p>
+                <p class="d-block d-sm-none">His face looks like this one when he is happy? No idea, then</p>
               </div>
               <div class="carousel-item">
                 <img src="img/cara4.jpg" class="img-fluid rounded-circle" alt="..." />
@@ -328,8 +344,8 @@
               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                   Even if it's not my area, I managed to create a new design for a custumer who was not happy with the
-                  design given and our graphic designer was already on vacation and I decided to give it a try.
-                  Thankfully, she was happy about it
+                  design given. Our graphic designer was already on vacation and I decided to give it a try.
+                  Finally, they were happy about it and customers enjoy it everyday.
                 </div>
               </div>
             </div>
@@ -340,24 +356,13 @@
                     aria-controls="collapseOne">
                     <i class="fas fa-plus fa-1x icono"></i>
                   </button>
-                  <span class="ml-4">Qué es la ART?</span>
+                  <span class="ml-4">Creativity</span>
                 </div>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                  richardson ad squid.
-                  3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                  quinoa nesciunt
-                  laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                  single-origin
-                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                  labore wes
-                  anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                  lomo. Leggings
-                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard
-                  of them accusamus labore sustainable VHS.
+                  I still create stuff on my own for movies, magazines etc and that helped to increase sellings, more than the expected, in three accounts (two real state and one of health insurance) accounts considered already lost.
+                  This means I can work in different areas. Ideas used to take me far.
                 </div>
               </div>
             </div>
@@ -368,24 +373,13 @@
                     aria-controls="collapseOne">
                     <i class="fas fa-plus fa-1x icono"></i>
                   </button>
-                  <span class="ml-4">Qué es la ART?</span>
+                  <span class="ml-4">Presentations</span>
                 </div>
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                  richardson ad squid.
-                  3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                  quinoa nesciunt
-                  laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                  single-origin
-                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                  labore wes
-                  anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                  lomo. Leggings
-                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard
-                  of them accusamus labore sustainable VHS.
+                I was sent to give talks in different conferences (the last one was for Game -X) and it was great! At least for me : ).
+                After each conference given we got new clients and many business proposals
                 </div>
               </div>
             </div>
@@ -396,24 +390,13 @@
                     aria-controls="collapseOne">
                     <i class="fas fa-plus fa-1x icono"></i>
                   </button>
-                  <span class="ml-4">Qué es la ART?</span>
+                  <span class="ml-4">Willingness</span>
                 </div>
               </div>
               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                  richardson ad squid.
-                  3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                  quinoa nesciunt
-                  laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                  single-origin
-                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
-                  labore wes
-                  anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                  lomo. Leggings
-                  occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard
-                  of them accusamus labore sustainable VHS.
+                 My last company nedeed someone to travel abroad and no one was able to do it because of the family or different issues. I'm a free spirit and was willing to move myself in
+                 order to achieve the new goal. Instead, we achieved two in the same trip. 
                 </div>
               </div>
             </div>
@@ -426,8 +409,8 @@
   <!-- <hr class="mt-5" style="width: 290px; border: 1px solid lightgray"> -->
 
   <!-- FOOTER -->
-  <footer class="py-4 d-sm-none d-block" id="#contact">
-    <div class=" container">
+  <footer class="py-4 d-sm-none d-block" id="contacto">
+    <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12">
           <div class="col-12 col-sm-12">
@@ -460,7 +443,7 @@
       </div>
   </footer>
 
-  <footer class="py-4 d-none d-sm-block mt-sm-5" id="contacto">
+  <footer class="py-4 d-none d-sm-block mt-sm-5" id="contactoD">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12">

@@ -436,17 +436,17 @@ h2 {
 
 @media only screen and (min-width: 860px) and (max-width: 1600px) {
   .flags {
-    margin-top: 280px !important;
+    margin-top: 320px !important;
   }
 }
 
 @media only screen and (min-width: 512px) and (max-width: 1200px) {
   .flags {
-    margin-top: 300px !important;
+    margin-top: 330px !important;
   }
 }
 
-@media only screen and (min-width: 1600px) and (max-width: 2000px) {
+@media only screen and (min-width: 460px) and (max-width: 860x) {
   .flags {
     margin-top: 110px !important;
   }

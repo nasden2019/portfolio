@@ -1,82 +1,83 @@
 @charset "UTF-8";
-nav {
-  background: url("/img/imgMobile.jpg") no-repeat center center/cover;
-  height: 83vh;
-}
-
-nav a {
-  font-weight: 900;
-  font-size: 1.1rem !important;
-  color: white;
-  /*-----------HOVER EFFECTS------------*/
-}
-
-nav a .nav-link {
-  text-decoration: none;
-  font-size: 5px;
-  color: #eee;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  position: relative;
-  /*para q las líneas aparezcan con el hover*/
-  padding: 4px 0;
-  /*para separar las líneas naranjas de las palabras*/
-}
-
-nav a .nav-link::before,
-nav a .nav-link::after {
-  /*position absolute para q las líneas puedan verse, sino al ser 'a' un elemento inline-block no pueden verse*/
-  content: '';
-  width: 50%;
-  height: 2px;
-  background-color: chocolate;
-  position: absolute;
-  left: 0;
-  /*para ubicarlas al comienzo de cada palabra*/
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  /*to HIDE the lines*/
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-}
-
-nav a .nav-link::after {
-  /*para hacerle la línea de debajo*/
-  bottom: 0;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  /*para q la línea comience desde la derecha*/
-}
-
-nav a .nav-link::before {
-  /*para hacerle la línea de arriba*/
-  top: 0;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  /*para q la línea comience desde la izquierda*/
-}
-
-nav a .nav-link:hover::before,
-nav a .nav-link:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+@media (min-width: 700px) {
+  nav {
+    background: url("/img/imgMobile.jpg") no-repeat center center/cover;
+    height: 83vh;
+  }
+  a {
+    font-weight: 900;
+    font-size: 1.1rem !important;
+    color: white;
+    /*-----------HOVER EFFECTS------------*/
+  }
+  a .nav-link {
+    text-decoration: none;
+    font-size: 5px;
+    color: #eee;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    position: relative;
+    /*para q las líneas aparezcan con el hover*/
+    padding: 4px 0;
+    /*para separar las líneas naranjas de las palabras*/
+  }
+  a .nav-link::before,
+  a .nav-link::after {
+    /*position absolute para q las líneas puedan verse, sino al ser 'a' un elemento inline-block no pueden verse*/
+    content: '';
+    width: 50%;
+    height: 2px;
+    background-color: chocolate;
+    position: absolute;
+    left: 0;
+    /*para ubicarlas al comienzo de cada palabra*/
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    /*to HIDE the lines*/
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  a .nav-link::after {
+    /*para hacerle la línea de debajo*/
+    bottom: 0;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    /*para q la línea comience desde la derecha*/
+  }
+  a .nav-link::before {
+    /*para hacerle la línea de arriba*/
+    top: 0;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    /*para q la línea comience desde la izquierda*/
+  }
+  a .nav-link:hover::before,
+  a .nav-link:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 
 @media (max-width: 700px) {
-  nav .nav-link {
+  .navMob {
+    background: url("/img/mobile.jpg") no-repeat center center/cover;
+    height: 87vh;
+    background-attachment: fixed;
+  }
+  .nav-link {
     color: white;
     font-weight: 700;
     font-size: 15px !important;
   }
-  nav .nav-link:hover {
+  .nav-link:hover {
     -webkit-text-decoration: solid;
             text-decoration: solid;
     color: white;
     cursor: pointer;
   }
-  nav #text {
+  #text {
     color: black;
     font-weight: 700;
   }
@@ -462,13 +463,5 @@ h2 {
 @media only screen and (min-width: 1900px) and (max-width: 2500px) {
   .flags {
     margin-top: 100px !important;
-  }
-}
-
-@media (max-width: 700px) {
-  .monileImg {
-    background: url("/img/IMG_1365.jpg") no-repeat center center/cover;
-    height: 87vh;
-    background-attachment: fixed !important;
   }
 }

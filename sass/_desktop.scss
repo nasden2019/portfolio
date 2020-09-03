@@ -6,7 +6,6 @@
 }
 
 .flags {
-
     /* MIN AND MAX TOGETHER WORK FOR LAPTOP AND BIG MONITOR. CHECK IT ALWAYS! */
 
     @media only screen and (min-width: 160px) and (max-width: 560x) {
@@ -49,8 +48,6 @@
     //     margin-top: 330px !important;
     // }
 
-
-
     //     @media only screen and (min-width: 1000px) and (max-width: 2000px) {
     //         // super responsive!
     //         margin-top: 110px !important;
@@ -59,10 +56,10 @@
 }
 
 // MOBILE IMG
-.monileImg {
-    @media (max-width: 700px) {
-        background: url("/img/IMG_1365.jpg") no-repeat center center/cover;
-        height: 87vh;
-        background-attachment: fixed !important;
-    }
-}
+// .mobileImg {
+//   @media (max-width: 700px) {
+//     background: url("/img/mobile.jpg") no-repeat center center/cover !important;
+//     height: 87vh;
+//     background-attachment: fixed !important;
+//   }
+// }

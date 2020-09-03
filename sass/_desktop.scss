@@ -57,3 +57,12 @@
     //     }
     // }
 }
+
+// MOBILE IMG
+.monileImg {
+    @media (max-width: 700px) {
+        background: url("/img/IMG_1365.jpg") no-repeat center center/cover;
+        height: 87vh;
+        background-attachment: fixed !important;
+    }
+}

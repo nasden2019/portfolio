@@ -65,11 +65,6 @@ nav a .nav-link:hover::after {
 }
 
 @media (max-width: 700px) {
-  nav {
-    background: url("/img/IMG_1365.jpg") no-repeat center center/cover;
-    height: 87vh;
-    background-attachment: fixed;
-  }
   nav .nav-link {
     color: white;
     font-weight: 700;
@@ -467,5 +462,13 @@ h2 {
 @media only screen and (min-width: 1900px) and (max-width: 2500px) {
   .flags {
     margin-top: 100px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .monileImg {
+    background: url("/img/IMG_1365.jpg") no-repeat center center/cover;
+    height: 87vh;
+    background-attachment: fixed !important;
   }
 }

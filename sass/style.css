@@ -62,7 +62,7 @@
 
 @media (max-width: 700px) {
   .navMob {
-    background: url("/img/newmobile.jpg") no-repeat center center/cover !important;
+    background: url("/img/mobilebridge.jpg") no-repeat center center/cover !important;
     height: 87vh !important;
     background-attachment: fixed !important;
   }

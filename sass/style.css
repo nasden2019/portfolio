@@ -67,7 +67,7 @@
     background-attachment: fixed !important;
   }
   .nav-link {
-    color: black;
+    color: black !important;
     font-weight: 700;
     font-size: 15px !important;
   }

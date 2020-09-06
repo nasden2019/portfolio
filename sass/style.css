@@ -1,9 +1,5 @@
 @charset "UTF-8";
 @media (min-width: 700px) {
-  nav {
-    background: url("/img/imgMobile.jpg") no-repeat center center/cover;
-    height: 83vh;
-  }
   a {
     font-weight: 900;
     font-size: 1.1rem !important;

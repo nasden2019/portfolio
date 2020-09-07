@@ -1,4 +1,4 @@
-let texts = ["Typical Text Effect", "That Impress", "No One"];
+let texts = ["Alex Declercq", "Frontend developer"];
 let count = 0;
 let index = 0;
 let currentText = "";

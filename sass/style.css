@@ -60,7 +60,6 @@
   .navMob {
     background: url("/img/mobilebridge.jpg") no-repeat center center/cover !important;
     height: 87vh !important;
-    background-attachment: fixed !important;
   }
   .nav-link {
     color: white !important;
